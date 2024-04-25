@@ -41,7 +41,7 @@ struct LapGrid: Layout {
                     proposal: .init(width: subviewWidth, height: subviewHeight)
                 )
                 
-                minX = subviewWidth + spacing
+                minX = bounds.minX + subviewWidth + spacing
                 currentLineY = subviewHeight
                 totalY = totalY + currentLineY + spacing
                 usedColumns = subviewSpan
